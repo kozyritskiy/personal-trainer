@@ -1,0 +1,374 @@
+.s-order {
+    height: 64.0625rem;
+    width: 100%;
+    position: relative;
+    @include phones {
+        height: 69.0625rem;
+    }
+    &__empty {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        @include tablets {
+            flex-direction: column;
+        }
+        &-left {
+            height: 100%;
+            width: 50%;
+            background-color: $black16;
+            @include tablets {
+                height: 60%;
+                width: 100%;
+            }
+        }
+        &-right {
+            height: 100%;
+            width: 50%;
+            background-color: $black1D;
+            @include tablets {
+                height: 40%;
+                width: 100%;
+                background-color: $black16;
+            }
+        }
+    }
+    &__container {
+        height: 100%;
+        width: 95%;
+        max-width: 90rem;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    &__left {
+        width: 69%;
+        background-color: $black16;
+        padding: 3.75rem 4.6875rem 0 4.0625rem;
+        @include tablets {
+            width: 100%;
+            height: 60%;
+        }
+        @include phones {
+            padding-top: 8.25rem;
+            padding-left: 2.8125rem;
+            padding-right: 2.8125rem;
+        }
+    }
+    &__right {
+        width: 31%;
+        background-color: $black1D;
+        position: relative;
+        @include tablets {
+            display: none;
+        }
+    }
+    &__cross {
+        position: absolute;
+        top: 1.5625rem;
+        right: 1.5625rem;
+        @include phones {
+            top: 2.5625rem;
+            right: 0.5625rem;
+        }
+    }
+    &__title {
+        font-weight: $extraBold;
+        color: $yellowF1;
+        font-size: 1.875rem;
+        margin-bottom: 1.25rem;
+        @include phones {
+            text-align: center;
+        }
+    }
+    &__logo {
+        display: none;
+        @include phones {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+        }
+    }
+    &__sub-title {
+        font-weight: $extraBold;
+        color: $yellowF1;
+        font-size: 1.125rem;
+        max-width: 20.4375rem;
+        margin-bottom: 3.75rem;
+        @include phones {
+            display: none;
+        }
+    }
+    &__order {
+        display: flex;
+        width: 100%;
+        @include desktops {
+            flex-direction: column;
+        }
+    }
+    &__desc {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        @include desktops {
+            width: 100%;
+        }
+    }
+    &__arrow {
+        align-self: flex-end;
+        margin-bottom: 1.875rem;
+        @include tablets {
+            transform: rotate(90deg);
+        }
+        @include phones {
+            display: none;
+        }
+    }
+    &__text {
+        max-width: 15.625rem;
+        font-weight: $regular;
+        color: $whiteFF;
+        font-size: 1.125rem;
+        padding-right: 2.3125rem;
+        @include desktops {
+            max-width: 100%;
+        }
+        @include phones {
+            text-align: center;
+            padding: 0;
+        }
+    }
+    &__form {
+        display: flex;
+        width: 70%;
+        padding-top: 2.3125rem;
+        @include desktops {
+            width: 100%;
+        }
+        @include phones {
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        &-column {
+            width: 50%;
+            padding: 0;
+            border: none;
+            margin-right: 1.5625rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            @include phones {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+        &-row {
+            width: 100%;
+            margin-bottom: 1.5625rem;
+            @include phones {
+                width: 100%;
+            }
+            &_email {
+                margin-bottom: 2.5rem;
+                @include phones {
+                    margin-bottom: 1.5625rem;
+                }
+            }
+            &_margin_submit {
+                margin-bottom: 4.875rem;
+                @include phones {
+                    margin-bottom: 2.875rem;
+                }
+            }
+        }
+        &-block {
+            font-weight: $bold;
+            color: $whiteFF;
+            font-size: 0.75rem;
+        }
+        &-title {
+            padding-left: 0.6875rem;
+            margin-bottom: 0.75rem;
+            &_tablets {
+                max-width: 271px;
+                @include phones {
+                    max-width: 100%;
+                }
+            }
+        }
+        &-input {
+            width: 100%;
+            height: 2.3125rem;
+            @include phones {
+                width: 100%;
+            }
+        }
+        &-area {
+            width: 100%;
+            height: 9.0625rem;
+            resize: none;
+        }
+    }
+    &__btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include phones {
+            width: 10%;
+            justify-content: center;
+            align-self: center;
+            margin: 0 auto;
+            height: 3rem;
+        }
+        &-arrow {
+            display: block;
+            width: 0rem;
+            height: 0rem;
+            border: 0.625rem solid transparent;
+            border-top-color: $whiteFF;
+            transform: rotate(270deg) translate(0rem, 0.875rem);
+            margin: 0;
+            padding: 0;
+            @include phones {
+                display: none;
+            }
+            &:before {
+                content: '';
+                width: 0rem;
+                height: 0rem;
+                border: 0.3125rem solid transparent;
+                border-top-color: $black1D;
+                display: inline-block;
+                transform: translate(-0.3125rem, -0.625rem);
+            }
+        }
+    }
+    &__contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding: 10rem 5.625rem 0 3.125rem;
+        @include tablets {
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        &-list {
+            @include tablets {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &-item {
+            margin-bottom: 3.125rem;
+            @include tablets {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-title {
+            font-weight: $extraBold;
+            color: $yellowF1;
+            font-size: 1.875rem;
+            margin-bottom: 0.625rem;
+            @include tablets {
+                text-align: center;
+            }
+            &_hidden {
+                @include desktops {
+                    display: none;
+                }
+                @include tablets {
+                    display: block;
+                }
+            }
+        }
+        &-desc {
+            font-weight: $regular;
+            color: $whiteFF;
+            font-size: 1.125rem;
+            max-width: 20.4375rem;
+            margin-bottom: 0.625rem;
+            @include desktops {
+                max-width: 15.4375rem;
+            }
+            @include tablets {
+                text-align: center;
+                max-width: 40rem;
+            }
+        }
+        &-phone {
+            font-weight: $bold;
+            color: $whiteFF;
+            font-size: 1.125rem;
+            text-decoration: none;
+        }
+        &-email {
+            font-weight: $bold;
+            color: $whiteFF;
+            font-size: 0.75rem;
+            text-decoration: none;
+            @include desktops {
+                display: none;
+            }
+            @include tablets {
+                display: block;
+                text-align: center;
+            }
+        }
+        &-instagram {
+            font-weight: $bold;
+            color: $whiteFF;
+            font-size: 1.125rem;
+            text-decoration: none;
+        }
+    }
+    &__bg {
+        max-width: 86.0625rem;
+        height: 15.6875rem;
+        position: absolute;
+        bottom: 1.875rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url("../images/backgrounds/form-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        @include large-desktops {
+            bottom: 2.875rem;
+        }
+        @include desktops {
+            bottom: 1.875rem;
+            height: 10.6875rem;
+        }
+        @include phones {
+            display: none;
+        }
+        &:after {
+            content: "";
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: linear-gradient(to right, #171717 0%, rgba(129, 129, 129, 0) 100%);
+        }
+    }
+}

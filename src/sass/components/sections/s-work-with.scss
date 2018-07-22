@@ -1,0 +1,78 @@
+.s-work-with {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0 8.125rem 0;
+    background-color: $whiteFF;
+    position: relative;
+    @include small-phones {
+        flex-direction: column;
+        padding: 3rem 0 3.125rem 0;
+    }
+    &__wrap-info {
+        @include small-phones {
+            margin-bottom: 30px; // height: 40%;
+            // overflow: hidden;
+        }
+    }
+    &__wrap-info.wrap-info_active {
+        @include small-phones {
+            overflow: hidden;
+        }
+    }
+    &__bg {
+        position: absolute;
+        max-width: 100%;
+    }
+    &__btn {
+        display: none;
+        @include small-phones {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+            color: $black1D;
+            margin: 0 auto;
+        }
+        &-arrow {
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 10px solid transparent;
+            border-top-color: $black1D;
+            transform: rotate(180deg) translate(0px, 5px);
+            margin: 0;
+            padding: 0;
+            transition: 1s;
+            &:before {
+                content: '';
+                width: 0px;
+                height: 0px;
+                border: 5px solid transparent;
+                border-top-color: $whiteFF;
+                display: inline-block;
+                transform: translate(-5px, -10px);
+            }
+        }
+        &-arrow.arrow-less {
+            transform: rotate(0deg) translate(0px, 5px);
+            &_color {
+                border-top-color: $whiteFF;
+                &:before {
+                    content: '';
+                    width: 0px;
+                    height: 0px;
+                    border: 5px solid transparent;
+                    border-top-color: $black1D;
+                    display: inline-block;
+                    transform: translate(-5px, -10px);
+                }
+            }
+        }
+        &-text {
+            font-weight: $extraBold;
+            font-size: 12px;
+        }
+    }
+}

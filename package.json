@@ -1,0 +1,43 @@
+{
+  "name": "basic-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eugene-Sviridov/basic-starter-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eugene-Sviridov/basic-starter-kit/issues"
+  },
+  "homepage": "https://github.com/Eugene-Sviridov/basic-starter-kit#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.24.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^4.3.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "path": "^0.12.7",
+    "run-sequence": "^2.2.1",
+    "script-loader": "^0.7.2",
+    "webpack-stream": "^4.0.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "swiper": "^4.2.6"
+  }
+}

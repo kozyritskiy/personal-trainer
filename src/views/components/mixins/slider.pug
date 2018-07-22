@@ -1,0 +1,15 @@
+mixin slider(slides)
+    .b-slider
+        .b-slider__container
+            .b-slider__wrapper.swiper-wrapper
+                .b-slider__item.swiper-slide 
+                    img.b-slider__img(src='./images/sliders/standart/standart-slide-1.png')
+                .b-slider__item.swiper-slide 
+                    img.b-slider__img(src='./images/sliders/standart/standart-slide-2.png')
+            .swiper-pagination
+            button(type='button').b-slider__next
+                img(src='./images/sliders/slider-next.svg')
+            button(type='button').b-slider__prev
+                img(src='./images/sliders/slider-prev.svg')
+
+        

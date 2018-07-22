@@ -1,0 +1,41 @@
+.standart-photo {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0 1.25rem;
+    @include phones{
+        display: none;
+    }
+    &__cross_right {
+        position: absolute;
+        bottom: 1.625rem;
+        left: 16.5625rem;
+        @include large-desktops {
+            left: 40%;
+        }
+        @include desktops {
+            display: none;
+        }
+    }
+    &__trainer {
+        position: absolute;
+        bottom: 13.125rem;
+        left: 4.125rem;
+        @include desktops {
+            display: none;
+        }
+    }
+    &__man {
+        position: absolute;
+        bottom: 21.875rem;
+        right: 14.375rem;
+        z-index: 2;
+        @include desktops {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}

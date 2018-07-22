@@ -1,0 +1,25 @@
+.s-partnership {
+    background-color: $black1D;
+    padding-top: 3.125rem;
+    padding-bottom: 3.75rem;
+    &__title {
+        font-size: 1.875rem;
+        line-height: 2.75rem;
+        color: $yellowF1;
+        font-weight: $extraBold;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 61.875rem;
+        margin: 0 auto;
+    }
+    &__item {
+        width: 10.75rem;
+        height: 10.75rem;
+        border-radius: 50%;
+        background-color: $greyC4;
+    }
+}

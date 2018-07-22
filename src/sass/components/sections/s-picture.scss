@@ -1,0 +1,18 @@
+.s-picture {
+    background-image: url("../images/backgrounds/mountain.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 38.4375rem;
+    position: relative;
+    &:after {
+        background: linear-gradient(to top, rgba(241, 184, 45, 0.7) 0%, rgba(241, 184, 45, 0.48) 100%);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}

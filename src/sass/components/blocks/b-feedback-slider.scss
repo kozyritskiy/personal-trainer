@@ -1,0 +1,87 @@
+.b-feedback-slider {
+    position: relative;
+    &__container {
+        max-width: 58.4375rem;
+        margin: 0 auto;
+        overflow: hidden;
+        @include desktops {
+            max-width: 38.4375rem;
+        }
+        @include phones {
+            max-width: 25.4375rem;
+        }
+        @include small-phones {
+            max-width: 15.4375rem;
+        }
+    }
+    &__wrapper {
+        height: auto;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        height: auto;
+        &-img {
+            flex-shrink: 0;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        &-data {
+            margin-left: 2.5rem;
+            @include phones {
+                margin-left: 0;
+            }
+        }
+        &-name {
+            font-size: 1.875rem;
+            line-height: 2.75rem;
+            font-weight: $extraBold;
+            color: $whiteFF;
+            margin-bottom: 1.25rem;
+        }
+        &-about {
+            font-size: 0.75rem;
+            line-height: 1.125rem;
+            color: $yellowF1;
+            font-weight: $extraBold;
+            margin-bottom: 1.875rem;
+        }
+        &-feedback {
+            font-size: 0.75rem;
+            line-height: 1.125rem;
+            font-weight: $regular;
+            color: #fff;
+        }
+    }
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    &__prev {
+        left: calc(50% - (58.4375rem / 2) - 2.6875rem);
+        @include desktops {
+            left: calc(50% - (38.4375rem / 2) - 2.6875rem);
+        }
+        @include phones {
+            left: calc(50% - (25.4375rem / 2) - 2.6875rem);
+        }
+        @include small-phones {
+            left: calc(50% - (15.4375rem / 2) - 2.6875rem);
+        }
+    }
+    &__next {
+        right: calc(50% - (58.4375rem / 2) - 5rem);
+        @include desktops {
+            right: calc(50% - (38.4375rem / 2) - 5rem);
+        }
+        @include phones {
+            right: calc(50% - (25.4375rem / 2) - 5rem);
+        }
+        @include small-phones {
+            right: calc(50% - (15.4375rem / 2) - 5rem);
+        }
+    }
+}

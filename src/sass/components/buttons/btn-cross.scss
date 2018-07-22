@@ -1,0 +1,58 @@
+.s-order__cross-btn {
+    position: relative;
+    width: 3.125rem;
+    height: 3.125rem;
+    cursor: pointer;
+    &:hover span {
+        background: $whiteFF;
+    }
+}
+
+.s-order__cross-btn span {
+    display: block;
+    height: 0.25rem;
+    width: 100%;
+    background: $yellowF1;
+    position: absolute;
+    border-radius: 6.25rem;
+    transform-origin: center;
+    transition: all .4s;
+}
+
+.s-order__cross-btn span {
+    &:nth-child(1) {
+        top: 0;
+    }
+}
+
+.s-order__cross-btn span {
+    &:nth-child(2) {
+        top: 1rem;
+    }
+}
+
+.s-order__cross-btn span {
+    &:nth-child(3) {
+        top: 2rem;
+    }
+}
+
+.s-order__cross-btn span {
+    &:nth-child(1) {
+        transform: rotate(-135deg);
+        top: 1.25rem;
+    }
+}
+
+.s-order__cross-btn span {
+    &:nth-child(2) {
+        background-color: transparent;
+    }
+}
+
+.s-order__cross-btn span {
+    &:nth-child(3) {
+        transform: rotate(135deg);
+        top: 1.25rem;
+    }
+}

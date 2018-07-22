@@ -1,0 +1,58 @@
+.s-standart-gold {
+    width: 100%;
+    height: 43.75rem;
+    background-color: $whiteFF;
+    display: flex;
+    @include small-phones {
+        height: auto;
+    }
+}
+
+.standart-gold__desc {
+    width: 100%;
+    padding: 0 4.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include desktops {
+        padding: 0 2.125rem;
+    }
+    @include phones {
+        padding: 1.25rem 0;
+    }
+}
+
+.standart-gold__photo {
+    width: 100%;
+    position: relative;
+    @include phones {
+        display: none;
+    }
+}
+
+.standart-gold__man {
+    position: absolute;
+    top: 5.0625rem;
+    right: 8.8125rem;
+    z-index: 2;
+    @include desktops {
+        display: none;
+    }
+}
+
+.standart-gold__trainer {
+    position: absolute;
+    bottom: 6.5625rem;
+    left: 8.0625rem;
+    @include large-desktops {
+        left: 4.0625rem;
+    }
+    @include desktops {
+        max-width: 90%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}

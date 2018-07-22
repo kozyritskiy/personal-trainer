@@ -1,0 +1,33 @@
+.b-icons {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        flex-wrap: wrap;
+        @include desktops {
+            justify-content: center;
+            margin-left: 60px;
+        }
+    }
+    &__item {
+        width: 11.3125rem;
+        @include desktops {
+            margin-bottom: 30px;
+            margin-right: 60px;
+        }
+    }
+    &__img {
+        margin-bottom: 4.3125rem;
+    }
+    &__text {
+        color: $yellowF1;
+        margin: 0;
+        font-weight: $extraBold;
+        line-height: 1.625rem;
+        font-size: 1.125rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,8 @@
+.s-standart {
+    background-color: $black1D;
+    display: flex;
+    height: 100vh;
+    @include phones {
+        height: 70%;
+    }
+}

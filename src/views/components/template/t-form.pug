@@ -1,0 +1,64 @@
+template#form
+    section.s-order
+        .s-order__empty
+            .s-order__empty-left
+            .s-order__empty-right
+        .s-order__container
+            .s-order__logo
+                    img(src="./images/logos/logos.svg").s-order__logo-img
+            .s-order__left
+                .s-order__title ENQUIRY FORM
+                .s-order__sub-title YOUR JOURNEY TO A HEALTHIER BODY BEGINS HERE
+                .s-order__order
+                    .s-order__desc
+                        .s-order__arrow
+                            img(src="./images/icons/arrow.svg")
+                        .s-order__text To find out more about the Personal Training sessions and discover how I can help you achieve your goals please get in touch. I will happily answer any questions and provide you available times for a free taster session.
+                    form.s-order__form
+                        fieldset.s-order__form-column
+                            .s-order__form-row
+                                label.s-order__form-block
+                                    .s-order__form-title FULL NAME
+                                    input(type="text").s-order__form-input
+                            .s-order__form-row
+                                label.s-order__form-block
+                                    .s-order__form-title PHONE NUMBER
+                                    input(type="text").s-order__form-input
+                            .s-order__form-row
+                                label.s-order__form-block
+                                    .s-order__form-title.s-order__form-title_tablets ANYMORE QUESTIONS, PLEASE WRITE THEM BELOW:
+                                    textarea(name="").s-order__form-area
+                        fieldset.s-order__form-column
+                            .s-order__form-row
+                                label.s-order__form-block
+                                    .s-order__form-title MY GOAL IS
+                                    input(type="text").s-order__form-input
+                            .s-order__form-row.s-order__form-row_email
+                                label.s-order__form-block
+                                    .s-order__form-title EMAIL
+                                    input(type="text").s-order__form-input
+                            .s-order__form-row.s-order__form-row_margin_submit
+                                label.s-order__form-block
+                                    .s-order__form-title AVAILABILITY
+                                    select(name="").s-order__form-input
+                            button(type="submit").s-order__btn.btn-default SUBMIT
+                                .s-order__btn-arrow
+            .s-order__right
+                .s-order__contact
+                    ul.s-order__contact-list
+                        li.s-order__contact-item
+                            .s-order__contact-title CALL
+                            .s-order__contact-desc If you don’t want to fill in the form and want to speak to me directly, please call:
+                            a(href="#").s-order__contact-phone 07715211321
+                        li.s-order__contact-item
+                            .s-order__contact-title.s-order__contact-title_hidden EMAIL 
+                            a(href="#").s-order__contact-email INFO@STEVENTHOMPSONPERSONALTRAINER.COM
+                        li.s-order__contact-item
+                            .s-order__contact-title INSTAGRAM 
+                            a(href="#").s-order__contact-instagram @STEVENTHOMPSONPT
+            .s-order__bg
+            .s-order__cross
+                    .s-order__cross-btn
+                        span
+                        span
+                        span

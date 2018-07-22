@@ -1,0 +1,37 @@
+.scrolltotop {
+    position: fixed;
+    right: 0;
+    bottom: 5rem;
+    cursor: pointer;
+    transition: all .5s;
+    display: none;
+    text-align: center;
+    z-index: 999;
+    &__scroll {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        line-height: 1.1875rem;
+        font-weight: $bold;
+        color: $whiteFF;
+        transform: rotate(270deg);
+        bottom: 7.9375rem;
+        right: 0;
+        z-index: 1;
+        transition: 0.4s;
+
+
+        &:hover {
+        color: $yellowF1;
+        }
+        &:before {
+            display: inline-block;
+            content: '';
+            width: 2.5rem;
+            height: 0.125rem;
+            background-color: $yellowF1;
+            margin-right: 0.75rem;
+        }
+    }
+}

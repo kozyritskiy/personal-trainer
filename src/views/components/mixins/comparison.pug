@@ -1,0 +1,7 @@
+mixin comparison(imagePath, title, points)
+    .b-comparison
+        h2.b-comparison__title=title
+        each point in points
+            .b-comparison__item
+                img(src=imagePath)
+                span.b-comparison__description=point

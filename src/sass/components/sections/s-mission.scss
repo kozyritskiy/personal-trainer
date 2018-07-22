@@ -1,0 +1,14 @@
+.s-mission {
+   background-color: $black16;
+   padding: 13.5rem 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .b-info {
+        &__data {
+            max-width: 29.625rem;
+        }
+    }
+}

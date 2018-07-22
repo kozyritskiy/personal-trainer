@@ -1,0 +1,7 @@
+mixin info(title, paragraphs, mod, modTitle)
+    .b-info
+        if title
+            div(class=`b-info__title_${modTitle}`)= title
+        div(class=`b-info__data_${mod}`)
+            each paragraph in paragraphs
+                p.b-info__paragraph= paragraph

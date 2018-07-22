@@ -1,0 +1,35 @@
+.s-advantage {
+    background-color: $black1D;
+    padding-top: 7.375rem;
+    padding-bottom: 4.5rem;
+    position: relative;
+    &__loyality {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include small-phones {
+            max-width: 100%;
+        }
+    }
+    &__btn {
+        display: none;
+        @include small-phones {
+            display: flex;
+            position: relative;
+            z-index: 100;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+            color: $black1D;
+            margin: 0 auto;
+        }
+    }
+}
+
+.wrap-loyalty {
+    @include phones {
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+}

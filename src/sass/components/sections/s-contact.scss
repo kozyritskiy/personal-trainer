@@ -1,0 +1,113 @@
+.s-contact {
+    display: flex;
+    @include desktops {
+        flex-direction: column-reverse;
+    }
+    &__left {
+        background-color: $black1D;
+        text-align: right;
+        @include small-phones {
+            display: none;
+        }
+    }
+    &__left img {
+        max-width: 100%;
+    }
+    &__left,
+    &__right {
+        width: 50%;
+        flex-basis: 50%;
+        @include desktops {
+            width: 100%;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 3.125rem;
+        background-color: $black1D;
+        @include phones {
+            align-items: center;
+        }
+    }
+    &__title {
+        font-size: 1.875rem;
+        line-height: 2.3125rem;
+        color: $yellowF1;
+        font-weight: $extraBold;
+        margin-bottom: 3.125rem;
+        text-transform: uppercase;
+        @include small-phones {
+            font-size: 1.575rem;
+            margin-bottom: 2.125rem;
+        }
+    }
+    &__subtitle {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        color: $yellowF1;
+        font-weight: $medium;
+        margin-bottom: 0.625rem;
+        text-transform: uppercase;
+    }
+    &__phone {
+        font-size: 2.125rem;
+        color: $yellowF1;
+        font-weight: $bold;
+        text-decoration: none;
+        margin-bottom: 3.125rem;
+        @include phones {
+            text-align: center;
+        }
+        @include small-phones {
+            text-align: center;
+            margin-bottom: 2.125rem;
+        }
+    }
+    &__email {
+        font-size: 1.35rem;
+        color: $yellowF1;
+        font-weight: $bold;
+        text-decoration: none;
+        @include large-desktops {
+            font-size: 1.2rem;
+        }
+        @include desktops {
+            font-size: 1.5rem;
+        }
+        @include phones {
+            text-align: center;
+        }
+        @include small-phones {
+            font-size: 0.9rem;
+        }
+    }
+    &__info {
+        font-size: 1.1875rem;
+        color: $whiteFD;
+        font-weight: $bold;
+        p {
+            margin: 0 0 1.25rem 0;
+        }
+        @include small-phones {
+            font-size: 0.7875rem;
+        }
+    }
+    &__book {
+        width: 100%;
+        margin-bottom: 3.125rem;
+        @include phones {
+            text-align: center;
+        }
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+._size {
+    margin-bottom: 3.125rem;
+}

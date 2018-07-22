@@ -1,0 +1,70 @@
+.hamburger {
+    width: 40px;
+    height: 45px;
+    cursor: pointer;
+    position: relative;
+    display: none;
+    z-index: 5;
+    @include desktops {
+        display: flex;
+    }
+}
+
+.hamburger {
+    &:hover span {
+        background: $yellowF1;
+    }
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 100px;
+    transform-origin: center;
+    transition: all .4s;
+}
+
+.hamburger span {
+    &:nth-child(1) {
+        top: 0;
+    }
+}
+
+.hamburger span {
+    &:nth-child(2) {
+        top: 16px;
+    }
+}
+
+.hamburger span {
+    &:nth-child(3) {
+        top: 32px;
+    }
+}
+
+.hamburger.open span {
+    &:nth-child(1) {
+        transform: rotate(-135deg);
+        top: 20px;
+    }
+}
+
+.hamburger.open span {
+    &:nth-child(2) {
+        background-color: transparent;
+    }
+}
+
+.hamburger.open span {
+    &:nth-child(3) {
+        transform: rotate(135deg);
+        top: 20px;
+    }
+}
+
+.static {
+    overflow: hidden;
+}

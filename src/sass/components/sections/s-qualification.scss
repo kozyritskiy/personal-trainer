@@ -1,0 +1,18 @@
+.s-qualification {
+    background-color: $black16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 6.875rem 0 8.4375rem 0;
+    &__title {
+        color: $yellowF1;
+        font-size: 2.1875rem;
+        font-weight: $extraBold;
+        font-family: Montserrat;
+        margin-bottom: 5rem;
+        @include small-phones{
+            text-align: center;
+        }
+    }
+}

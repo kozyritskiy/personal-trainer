@@ -1,0 +1,45 @@
+.b-icons-check {
+    width: 100%;
+    padding: 0 12.5rem;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        @include large-desktops {
+            justify-content: center;
+            margin-right: -1.25rem;
+        }
+    }
+    &__item {
+        max-width: 11.3125rem;
+        @include large-desktops {
+            margin-bottom: 1.25rem;
+            margin-right: 2.5rem;
+        }
+        @include phones {
+            margin-bottom: 3.3125rem;
+        }
+    }
+    &__img {
+        margin-bottom: 4.3125rem;
+        @include phones {
+            margin-bottom: 1.3125rem;
+        }
+    }
+    &__desc {
+        display: flex;
+        min-height: 6.25rem;
+        align-items: center;
+    }
+    &__text {
+        color: $yellowF1;
+        margin: 0;
+        font-weight: $extraBold;
+        line-height: 1.625rem;
+        font-size: 1.125rem;
+        text-align: center;
+    }
+}

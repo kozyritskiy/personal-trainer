@@ -1,0 +1,63 @@
+.standart-desc {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    &__container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        @include phones {
+            width: 100%;
+            overflow: hidden;
+            
+        }
+        @include old-phones {
+            align-items: flex-start;
+        }
+    }
+    &__coach-wrap {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        @include phones {
+            display: none;
+        }
+    }
+    &__coach {
+        position: absolute;
+        bottom: 55%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        line-height: 1.1875rem;
+        font-weight: $bold;
+        color: #fff;
+        transform: rotate(270deg);
+        &:before {
+            display: inline-block;
+            content: '';
+            width: 4.4375rem;
+            height: 0.125rem;
+            background-color: $yellowF1;
+            margin-right: 0.75rem;
+        }
+        @include large-desktops {
+            bottom: 45%;
+        }
+    }
+    &__cross_left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+    }
+}

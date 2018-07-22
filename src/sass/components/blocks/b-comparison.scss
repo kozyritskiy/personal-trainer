@@ -1,0 +1,27 @@
+.b-comparison {
+    &__title {
+        margin: 0;
+        padding-bottom: 2.4375rem;
+        font-size: 1.5rem;
+        line-height: 2.1875rem;
+        color: $yellowF1;
+        font-weight: $bold;
+        text-align: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 1.875rem;
+        }
+    }
+    &__description {
+        max-width: 20.5625rem;
+        margin-left: 2.125rem;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        color: $whiteFF;
+        font-weight: $regular;
+        align-self: center;
+    }
+}

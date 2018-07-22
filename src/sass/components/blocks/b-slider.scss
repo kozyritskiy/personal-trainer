@@ -1,0 +1,34 @@
+.b-slider {
+    position: relative;
+    max-width: 57.5rem;
+    margin: 0 auto;
+    background-image: url('../images/sliders/slider-bcg.png');
+    background-repeat: no-repeat;
+    background-position: -2.1875rem -1.875rem;
+    padding-top: 1.875rem;
+    &__container {
+        overflow: hidden;
+        margin: 0 auto;
+        max-width: 53.125rem;
+    }
+    &__wrapper,
+    &__item {
+        height: auto;
+    }
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    &__prev {
+        left: 3.4375rem;
+    }
+    &__next {
+        right: 3.4375rem;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}

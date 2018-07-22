@@ -1,0 +1,18 @@
+.nav {
+    height: 100%;
+    &__list {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2.9375rem;
+    }
+    &__link {
+        display: flex;
+        text-decoration: none;
+        font-family: Montserrat;
+        font-weight: $extraBold;
+        font-size: 0.875rem;
+        color: $whiteFF;
+    }
+}

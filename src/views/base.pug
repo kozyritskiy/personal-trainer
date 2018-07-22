@@ -1,0 +1,21 @@
+include ./components/mixins/mixins.pug
+
+
+html
+    head
+        meta(charset="utf-8")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        block styles
+            link(rel='stylesheet' type='text/css' href='./css/main.css')
+    body
+        .wrapper
+            .maincontent
+                include ./components/blocks/b-scrollup.pug
+                block content
+    
+    include ./components/template/template
+    block scripts
+        script(src='./js/main.js')
+            
+    

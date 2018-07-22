@@ -1,0 +1,18 @@
+.btn-default {
+    color: #fff;
+    border: 0.0625rem solid $yellowF1;
+    border-radius: 1.5625rem;
+    height: 2rem;
+    padding: 0 1rem;
+    min-width: 8.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    font-weight: $extraBold;
+    &._size {
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        height: 2.75rem;
+        padding: 0 1.625rem;
+    }
+}

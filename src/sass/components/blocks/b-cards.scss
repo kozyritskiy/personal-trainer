@@ -1,0 +1,94 @@
+.cards {
+    max-width: 77.1875rem;
+    width: 100%;
+    &__list {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        @include large-desktops {
+            justify-content: center;
+            margin-left: 30px;
+        }
+        // @include desktops {
+        //     justify-content: center;
+        //     margin-left: 30px;
+        // }
+    }
+    &__item {
+        background-color: $grey3A;
+        max-width: 18.125rem;
+        border-radius: 0.625rem;
+        display: flex;
+        align-items: center;
+        padding: 1.3125rem 1.5625rem 2.625rem 1.5625rem;
+        @include large-desktops {
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-right: 30px;
+            &:nth-child(3) {
+                order: 1;
+                margin-bottom: 0;
+            }
+        }
+        @include phones {
+            max-width: 21.875rem;
+        }
+    }
+}
+
+.card {
+    text-align: center;
+    font-family: Montserrat;
+    &__target {
+        font-size: 1.5rem;
+        font-weight: $extraBold;
+        color: $yellowF1;
+        margin-bottom: 1.875rem;
+    }
+    &__price {
+        font-size: 4rem;
+        font-weight: $extraBold;
+        color: $whiteFF;
+        margin-bottom: 1.875rem;
+    }
+    &__duration {
+        font-size: 0.875rem;
+        font-weight: $light;
+        color: $whiteFF;
+        margin-bottom: 1.25rem;
+    }
+    &__price_extra {
+        margin-bottom: 0.9375rem;
+    }
+    &__pm {
+        font-size: 0.875rem;
+    }
+    &__desc {
+        display: flex;
+        align-items: center;
+        font-size: 1.1875rem;
+        font-weight: $regular;
+        color: $whiteFF;
+        height: 10.625rem;
+        margin-bottom: 1.875rem;
+        line-height: 1.75rem;
+    }
+    &__desc_extra {
+        margin-bottom: 0;
+    }
+    &__bonus {
+        margin-bottom: 1.875rem;
+    }
+}
+
+.bonus {
+    font-size: 1.1875rem;
+    font-weight: $regular;
+    color: $whiteFF;
+    text-align: center;
+    font-family: Montserrat;
+    line-height: 1.75rem;
+}

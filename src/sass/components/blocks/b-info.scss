@@ -1,0 +1,67 @@
+.b-info {
+    width: 100%;
+    @include tablets {
+        padding: 0 1.25rem;
+    }
+    @include small-phones {
+        margin-bottom: 1.25rem;
+    }
+    &__title_left {
+        text-align: left;
+        font-size: 1.875rem;
+        line-height: 2.75rem;
+        color: $yellowF1;
+        font-weight: $extraBold;
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+    &__title_right {
+        text-align: right;
+        font-size: 1.875rem;
+        line-height: 2.75rem;
+        color: $yellowF1;
+        font-weight: $extraBold;
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+    &__title_center {
+        text-align: center;
+        font-size: 1.875rem;
+        line-height: 2.75rem;
+        color: $yellowF1;
+        font-weight: $extraBold;
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+    &__data_white {
+        text-align: justify;
+        color: #fff;
+        line-height: 1.125rem;
+        font-size: 0.75rem;
+        max-width: 47rem;
+        margin: 0 auto;
+        font-weight: $regular;
+    }
+    &__data_black {
+        text-align: justify;
+        color: $black1D;
+        line-height: 1.125rem;
+        font-size: 0.75rem;
+        max-width: 47rem;
+        margin: 0 auto;
+        font-weight: $regular;
+    }
+    &__paragraph {
+        @include phones {
+            font-size: 10px;
+            line-height: 1.42;
+        }
+        margin: 0;
+        &:not(:last-child) {
+            margin: 0 0 1.5625rem 0;
+        }
+    }
+}
